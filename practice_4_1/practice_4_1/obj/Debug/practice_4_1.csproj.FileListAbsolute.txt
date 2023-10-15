@@ -1,0 +1,10 @@
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\bin\Debug\practice_4_1.exe.config
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\bin\Debug\practice_4_1.exe
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\bin\Debug\practice_4_1.pdb
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\obj\Debug\practice_4_1.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\obj\Debug\practice_4_1.Form1.resources
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\obj\Debug\practice_4_1.Properties.Resources.resources
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\obj\Debug\practice_4_1.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\obj\Debug\practice_4_1.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\obj\Debug\practice_4_1.exe
+\\Mac\Home\Desktop\window_program\HW\practice_4_1\practice_4_1\obj\Debug\practice_4_1.pdb

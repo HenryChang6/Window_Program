@@ -1,0 +1,14 @@
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\bin\Debug\net6.0\Practice_3_2.exe
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\bin\Debug\net6.0\Practice_3_2.deps.json
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\bin\Debug\net6.0\Practice_3_2.runtimeconfig.json
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\bin\Debug\net6.0\Practice_3_2.dll
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\bin\Debug\net6.0\Practice_3_2.pdb
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\Practice_3_2.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\Practice_3_2.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\Practice_3_2.AssemblyInfo.cs
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\Practice_3_2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\Practice_3_2.dll
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\refint\Practice_3_2.dll
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\Practice_3_2.pdb
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\Practice_3_2.genruntimeconfig.cache
+\\Mac\Home\Desktop\window_program\HW\Practice_3_2\Practice_3_2\obj\Debug\net6.0\ref\Practice_3_2.dll

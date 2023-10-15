@@ -1,0 +1,14 @@
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\bin\Debug\net6.0\Practice2-1.exe
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\bin\Debug\net6.0\Practice2-1.deps.json
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\bin\Debug\net6.0\Practice2-1.runtimeconfig.json
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\bin\Debug\net6.0\Practice2-1.dll
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\bin\Debug\net6.0\Practice2-1.pdb
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\Practice2-1.GeneratedMSBuildEditorConfig.editorconfig
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\Practice2-1.AssemblyInfoInputs.cache
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\Practice2-1.AssemblyInfo.cs
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\Practice2-1.csproj.CoreCompileInputs.cache
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\Practice2-1.dll
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\refint\Practice2-1.dll
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\Practice2-1.pdb
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\Practice2-1.genruntimeconfig.cache
+\\.psf\Home\Desktop\視窗程式設計\HW\Practice2-1\Practice2-1\obj\Debug\net6.0\ref\Practice2-1.dll
