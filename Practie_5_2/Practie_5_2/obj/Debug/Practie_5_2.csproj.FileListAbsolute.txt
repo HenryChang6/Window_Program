@@ -1,0 +1,10 @@
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\bin\Debug\Practie_5_2.exe.config
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\bin\Debug\Practie_5_2.exe
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\bin\Debug\Practie_5_2.pdb
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\obj\Debug\Practie_5_2.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\obj\Debug\Practie_5_2.Form1.resources
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\obj\Debug\Practie_5_2.Properties.Resources.resources
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\obj\Debug\Practie_5_2.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\obj\Debug\Practie_5_2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\obj\Debug\Practie_5_2.exe
+\\Mac\Home\Desktop\window_program\HW\Practie_5_2\Practie_5_2\obj\Debug\Practie_5_2.pdb
