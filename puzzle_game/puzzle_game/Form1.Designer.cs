@@ -39,27 +39,27 @@
             this.btn_init = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pb0 = new System.Windows.Forms.PictureBox();
-            this.pb1 = new System.Windows.Forms.PictureBox();
-            this.pb2 = new System.Windows.Forms.PictureBox();
-            this.pb5 = new System.Windows.Forms.PictureBox();
-            this.pb4 = new System.Windows.Forms.PictureBox();
-            this.pb3 = new System.Windows.Forms.PictureBox();
             this.pb8 = new System.Windows.Forms.PictureBox();
             this.pb7 = new System.Windows.Forms.PictureBox();
             this.pb6 = new System.Windows.Forms.PictureBox();
+            this.pb5 = new System.Windows.Forms.PictureBox();
+            this.pb4 = new System.Windows.Forms.PictureBox();
+            this.pb3 = new System.Windows.Forms.PictureBox();
+            this.pb2 = new System.Windows.Forms.PictureBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
+            this.pb0 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackbar_diaplay)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb0)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -164,54 +164,6 @@
             this.panel1.Size = new System.Drawing.Size(300, 300);
             this.panel1.TabIndex = 8;
             // 
-            // pb0
-            // 
-            this.pb0.Location = new System.Drawing.Point(0, 0);
-            this.pb0.Name = "pb0";
-            this.pb0.Size = new System.Drawing.Size(90, 90);
-            this.pb0.TabIndex = 0;
-            this.pb0.TabStop = false;
-            // 
-            // pb1
-            // 
-            this.pb1.Location = new System.Drawing.Point(105, 0);
-            this.pb1.Name = "pb1";
-            this.pb1.Size = new System.Drawing.Size(90, 90);
-            this.pb1.TabIndex = 1;
-            this.pb1.TabStop = false;
-            // 
-            // pb2
-            // 
-            this.pb2.Location = new System.Drawing.Point(210, 0);
-            this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(90, 90);
-            this.pb2.TabIndex = 2;
-            this.pb2.TabStop = false;
-            // 
-            // pb5
-            // 
-            this.pb5.Location = new System.Drawing.Point(210, 105);
-            this.pb5.Name = "pb5";
-            this.pb5.Size = new System.Drawing.Size(90, 90);
-            this.pb5.TabIndex = 5;
-            this.pb5.TabStop = false;
-            // 
-            // pb4
-            // 
-            this.pb4.Location = new System.Drawing.Point(105, 105);
-            this.pb4.Name = "pb4";
-            this.pb4.Size = new System.Drawing.Size(90, 90);
-            this.pb4.TabIndex = 4;
-            this.pb4.TabStop = false;
-            // 
-            // pb3
-            // 
-            this.pb3.Location = new System.Drawing.Point(0, 105);
-            this.pb3.Name = "pb3";
-            this.pb3.Size = new System.Drawing.Size(90, 90);
-            this.pb3.TabIndex = 3;
-            this.pb3.TabStop = false;
-            // 
             // pb8
             // 
             this.pb8.Location = new System.Drawing.Point(210, 210);
@@ -219,6 +171,7 @@
             this.pb8.Size = new System.Drawing.Size(90, 90);
             this.pb8.TabIndex = 8;
             this.pb8.TabStop = false;
+            this.pb8.Tag = "8";
             // 
             // pb7
             // 
@@ -227,6 +180,7 @@
             this.pb7.Size = new System.Drawing.Size(90, 90);
             this.pb7.TabIndex = 7;
             this.pb7.TabStop = false;
+            this.pb7.Tag = "7";
             // 
             // pb6
             // 
@@ -235,6 +189,61 @@
             this.pb6.Size = new System.Drawing.Size(90, 90);
             this.pb6.TabIndex = 6;
             this.pb6.TabStop = false;
+            this.pb6.Tag = "6";
+            // 
+            // pb5
+            // 
+            this.pb5.Location = new System.Drawing.Point(210, 105);
+            this.pb5.Name = "pb5";
+            this.pb5.Size = new System.Drawing.Size(90, 90);
+            this.pb5.TabIndex = 5;
+            this.pb5.TabStop = false;
+            this.pb5.Tag = "5";
+            // 
+            // pb4
+            // 
+            this.pb4.Location = new System.Drawing.Point(105, 105);
+            this.pb4.Name = "pb4";
+            this.pb4.Size = new System.Drawing.Size(90, 90);
+            this.pb4.TabIndex = 4;
+            this.pb4.TabStop = false;
+            this.pb4.Tag = "4";
+            // 
+            // pb3
+            // 
+            this.pb3.Location = new System.Drawing.Point(0, 105);
+            this.pb3.Name = "pb3";
+            this.pb3.Size = new System.Drawing.Size(90, 90);
+            this.pb3.TabIndex = 3;
+            this.pb3.TabStop = false;
+            this.pb3.Tag = "3";
+            // 
+            // pb2
+            // 
+            this.pb2.Location = new System.Drawing.Point(210, 0);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(90, 90);
+            this.pb2.TabIndex = 2;
+            this.pb2.TabStop = false;
+            this.pb2.Tag = "2";
+            // 
+            // pb1
+            // 
+            this.pb1.Location = new System.Drawing.Point(105, 0);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(90, 90);
+            this.pb1.TabIndex = 1;
+            this.pb1.TabStop = false;
+            this.pb1.Tag = "1";
+            // 
+            // pb0
+            // 
+            this.pb0.Location = new System.Drawing.Point(0, 0);
+            this.pb0.Name = "pb0";
+            this.pb0.Size = new System.Drawing.Size(90, 90);
+            this.pb0.TabIndex = 0;
+            this.pb0.TabStop = false;
+            this.pb0.Tag = "0";
             // 
             // Form1
             // 
@@ -256,15 +265,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackbar_diaplay)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb0)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

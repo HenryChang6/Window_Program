@@ -15,8 +15,12 @@ namespace puzzle_game
         string imagePath;
         int timer_min = 0, timer_second = 0;
         string timer_str_min, timer_str_second;
+        Image[] random_imgs = new Image[9];
+        Image[] ans_imgs = new Image[9];
         int steps = 0;
-        Image current_img = null;
+        int empty_tag = 8;
+        Bitmap current_img = null;
+        Random rnd = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -48,63 +52,59 @@ namespace puzzle_game
                     pictureBox1.Image = current_img;
                     imagePath = filePath;  // Assuming imagePath is a class-level variable
                     trackbar_diaplay.Value = 1;
+
+                    for(int i = 0; i < 9; i++)
+                    {
+                        ans_imgs[i] = current_img.Clone(new Rectangle(i%3 * 90, i/3 * 90 , 90, 90), current_img.PixelFormat);
+                    }
                 }
             }
-        }
-        public void CreatePuzzleBoard()
-        {
-            PictureBox[,] pbs = { { pb0, pb1, pb2 }, { pb3, pb4, pb5 }, { pb6, pb7, pb8 } };
-            List<Image> pieces = CutImageIntoPieces(current_img);
-            //Hide One piece
-            Random rnd = new Random();
-            int hidden_index = rnd.Next(0, 9);
-            pieces.RemoveAt(hidden_index);
-            //Add another 8 into PictureBox
-            List<int> indices = Enumerable.Range(0,8).ToList();
-            for(int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    if (i == 2 && j == 2) 
-                    { 
-                        pbs[i, j].Image = null;
-                        break;
-                    } 
-                    int rnd_index = rnd.Next(indices.Count);
-                    int target_index = indices[rnd_index];
-                    pbs[i,j].Image = pieces[target_index];
-                    indices.RemoveAt(rnd_index);
-                }
-            }
+            
         }
 
-        public List<Image> CutImageIntoPieces(Image img)
+        public void CreatePuzzleBoard()
         {
-            List<Image> pieces = new List<Image>();
-            int piece_height = 90, piece_width = 90;
-            for(int r = 0; r < 3; r++)
+            PictureBox[] pbs = {pb0,pb1,pb2,pb3,pb4,pb5,pb6,pb7,pb8};
+            Image[] tmp = ans_imgs;
+            List<int> indices = Enumerable.Range(0, 9).ToList();
+            for (int i = 0; i < 9; i++)
             {
-                for(int c = 0; c < 3; c++) 
-                { 
-                
-                    //syntax: Rectangle(x_cor, y_cor, width, height)
-                    Rectangle rec = new Rectangle(piece_width * c, piece_height * r , piece_width, piece_height);
-                    Bitmap piece = new Bitmap(piece_width, piece_height);
-                    using (Graphics g = Graphics.FromImage(piece))
-                    {
-                        g.DrawImage(img, 0, 0, rec, GraphicsUnit.Pixel);
-                    }
-                    pieces.Add(piece);
-                }
+                    int rnd_index = rnd.Next(indices.Count);
+                    int target_index = indices[rnd_index];
+                    pbs[i].Image = tmp[target_index];
+                    pbs[i].Visible = true;
+                    random_imgs[i] = tmp[target_index]; 
+                    pbs[i].Click += Puzzle_Pb_Click;
+                    indices.RemoveAt(rnd_index);
             }
-            return pieces;
+            pb8.Visible = false;
+        }
+
+        public void Puzzle_Pb_Click(object sender, EventArgs e)
+        {
+            Update_Steps();
+            PictureBox pb = sender as PictureBox;
+            PictureBox[] pbs = { pb0, pb1, pb2, pb3, pb4, pb5, pb6, pb7, pb8 };
+            int current_tag = Convert.ToInt32(pb.Tag);
+
+            (random_imgs[empty_tag], random_imgs[current_tag]) = (random_imgs[current_tag], random_imgs[empty_tag]);
+            pbs[empty_tag].Image = random_imgs[empty_tag];  
+            pbs[current_tag].Visible = false;                 
+            pbs[empty_tag].Visible = true;
+            empty_tag = current_tag;
+
+            if (random_imgs.SequenceEqual(ans_imgs))
+            {
+                timer1.Enabled = false;
+                MessageBox.Show($"你獲勝了!\n完成時間:{timer_str_min}:{timer_str_second}\n移動部數:{steps}", "", MessageBoxButtons.OK);
+            }
         }
 
         private void btn_init_Click(object sender, EventArgs e)
         {
             if (current_img == null)
             {
-                MessageBox.Show("請先選擇圖片!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("請先選擇圖片!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             // timer initialization
