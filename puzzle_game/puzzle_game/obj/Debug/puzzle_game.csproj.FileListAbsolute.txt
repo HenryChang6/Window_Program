@@ -1,0 +1,10 @@
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\bin\Debug\puzzle_game.exe.config
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\bin\Debug\puzzle_game.exe
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\bin\Debug\puzzle_game.pdb
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\obj\Debug\puzzle_game.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\obj\Debug\puzzle_game.Form1.resources
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\obj\Debug\puzzle_game.Properties.Resources.resources
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\obj\Debug\puzzle_game.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\obj\Debug\puzzle_game.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\obj\Debug\puzzle_game.exe
+\\Mac\Home\Desktop\window_program\HW\puzzle_game\puzzle_game\obj\Debug\puzzle_game.pdb
