@@ -28,16 +28,16 @@ namespace puzzle_game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Game_Reset();
+            PictureBox[] pbs = { pb0, pb1, pb2, pb3, pb4, pb5, pb6, pb7 };
+            foreach (PictureBox pb in pbs)
+            {
+                pb.BackColor = Color.White;
+                pb.Click += Puzzle_Pb_Click;
+                pb.Enabled = false;
+            }
+            pb8.Click += Puzzle_Pb_Click;
+            pb8.Enabled = false;
         }
-
-        public void Game_Reset()
-        {
-            PictureBox[] pbs = { pb0, pb1, pb2, pb3, pb4, pb5, pb6, pb7};
-            foreach (PictureBox pb in pbs) pb.BackColor = Color.White;
-            current_img = null;
-        }
-
         private void btn_choose_photo_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -65,19 +65,18 @@ namespace puzzle_game
         public void CreatePuzzleBoard()
         {
             PictureBox[] pbs = {pb0,pb1,pb2,pb3,pb4,pb5,pb6,pb7,pb8};
-            Image[] tmp = ans_imgs;
             List<int> indices = Enumerable.Range(0, 9).ToList();
             for (int i = 0; i < 9; i++)
             {
                     int rnd_index = rnd.Next(indices.Count);
                     int target_index = indices[rnd_index];
-                    pbs[i].Image = tmp[target_index];
+                    pbs[i].Image = ans_imgs[target_index];
                     pbs[i].Visible = true;
-                    random_imgs[i] = tmp[target_index]; 
-                    pbs[i].Click += Puzzle_Pb_Click;
+                    random_imgs[i] = ans_imgs[target_index]; 
                     indices.RemoveAt(rnd_index);
             }
             pb8.Visible = false;
+            empty_tag = 8;
         }
 
         public void Puzzle_Pb_Click(object sender, EventArgs e)
@@ -97,6 +96,11 @@ namespace puzzle_game
             {
                 timer1.Enabled = false;
                 MessageBox.Show($"你獲勝了!\n完成時間:{timer_str_min}:{timer_str_second}\n移動部數:{steps}", "", MessageBoxButtons.OK);
+                foreach (PictureBox tmp_pb in pbs) tmp_pb.Enabled = false;
+                steps = 0; lbl_steps.Text = $"移動步數: {steps}";
+                timer_min = 0; timer_second = 0;
+                Timer_String_Converter();
+                lbl_time.Text = $"時間: {timer_str_min}:{timer_str_second}";
             }
         }
 
@@ -111,6 +115,9 @@ namespace puzzle_game
             timer1.Enabled = true; timer_min = 0; timer_second = 0;
             // steps initialization
             steps = 0; lbl_steps.Text = $"移動步數:0";
+            // picture box initialization
+            PictureBox[] pbs = { pb0, pb1, pb2, pb3, pb4, pb5, pb6, pb7, pb8 };
+            foreach (PictureBox pb in pbs) pb.Enabled = true;
             // puzzle board initialization
             CreatePuzzleBoard();
         }
