@@ -28,15 +28,15 @@ namespace puzzle_game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            PictureBox[] pbs = { pb0, pb1, pb2, pb3, pb4, pb5, pb6, pb7 };
+            PictureBox[] pbs = { pb0, pb1, pb2, pb3, pb4, pb5, pb6, pb7,pb8 };
             foreach (PictureBox pb in pbs)
             {
-                pb.BackColor = Color.White;
+                if(pb != pb8) pb.BackColor = Color.White;
                 pb.Click += Puzzle_Pb_Click;
-                pb.Enabled = false;
+                //pb.Enabled = false;
             }
-            pb8.Click += Puzzle_Pb_Click;
-            pb8.Enabled = false;
+            panel1.Enabled = false;
+
         }
         private void btn_choose_photo_Click(object sender, EventArgs e)
         {
@@ -59,7 +59,6 @@ namespace puzzle_game
                     }
                 }
             }
-            
         }
 
         public void CreatePuzzleBoard()
@@ -96,7 +95,7 @@ namespace puzzle_game
             {
                 timer1.Enabled = false;
                 MessageBox.Show($"你獲勝了!\n完成時間:{timer_str_min}:{timer_str_second}\n移動部數:{steps}", "", MessageBoxButtons.OK);
-                foreach (PictureBox tmp_pb in pbs) tmp_pb.Enabled = false;
+                panel1.Enabled = false;
                 steps = 0; lbl_steps.Text = $"移動步數: {steps}";
                 timer_min = 0; timer_second = 0;
                 Timer_String_Converter();
@@ -116,8 +115,7 @@ namespace puzzle_game
             // steps initialization
             steps = 0; lbl_steps.Text = $"移動步數:0";
             // picture box initialization
-            PictureBox[] pbs = { pb0, pb1, pb2, pb3, pb4, pb5, pb6, pb7, pb8 };
-            foreach (PictureBox pb in pbs) pb.Enabled = true;
+            panel1.Enabled = true;
             // puzzle board initialization
             CreatePuzzleBoard();
         }
