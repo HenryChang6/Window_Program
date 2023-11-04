@@ -12,6 +12,7 @@ namespace Practice_7_1
 {
     public partial class Form1 : Form
     {
+        Encoding enc = Encoding.UTF8;
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +28,8 @@ namespace Practice_7_1
             //new_Item.DropDownItems.AddRange(new ToolStripItem[] {sub_item1,sub_item2});
             lbl_content.Text = "";  lbl_search_result.Text = "";
             panel_chk.Hide();  panel_wb.Hide(); lbl_init_state_info.Hide();
+            openFileDialog1.Filter = "Text File(*.txt)|*.txt|Todo File(*.todo)|*.todo|All File(*.*)|*.*";
+            openFileDialog1.Title = "開啟舊檔";
         }
 
         private void menu_search_word_Click(object sender, EventArgs e)
@@ -89,31 +92,65 @@ namespace Practice_7_1
             //清空之前的所有資料，以新的狀態開始程式
             lbl_content.Font = lbl_init_state_info.Font;  lbl_search_result.Font = lbl_init_state_info.Font;
             lbl_content.Text = "";  lbl_search_result.Text = "";
-            fontDialog1.Reset();
+            fontDialog1.Reset(); 
+            openFileDialog1.FileName = "";
             panel_chk.Hide();  panel_wb.Hide();
         }
 
         private void menu_open_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog OFD = new OpenFileDialog())
-            {
-                OFD.Filter = "Text File(*.txt)|*.txt|Todo File(*.todo)|*.todo|All File(*.*)|*.*";
-                OFD.Title = "開啟舊檔";
-                if(OFD.ShowDialog() == DialogResult.OK)
+                if(openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-
+                    try
+                    {
+                    string content = System.IO.File.ReadAllText(openFileDialog1.FileName, enc);
+                    if (!content.EndsWith(Environment.NewLine)) content += Environment.NewLine;
+                    lbl_content.Text = content;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("請選取適當格式的檔案", "注意",MessageBoxButtons.OK);
+                    }
                 }
-            }
         }
 
         private void menu_save_Click(object sender, EventArgs e)
         {
+            //先檢查目前有沒有開檔 若沒有的話 就當作另存新檔來操作
+            if( openFileDialog1.FileName != "")
+            {
+                try
+                {
+                    System.IO.File.WriteAllText(openFileDialog1.FileName, lbl_content.Text, enc);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("無法儲存檔案: " + ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else  Save_As_NewFile();
 
+        }
+
+        public void Save_As_NewFile()
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    System.IO.File.WriteAllText(saveFileDialog1.FileName, lbl_content.Text, enc);
+                    openFileDialog1.FileName = saveFileDialog1.FileName;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("無法儲存檔案: " + ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void menu_save_as_newFile_Click(object sender, EventArgs e)
         {
-
+            Save_As_NewFile();
         }
 
         private void menu_exit_Click(object sender, EventArgs e)

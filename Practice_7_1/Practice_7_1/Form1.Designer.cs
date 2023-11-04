@@ -55,6 +55,8 @@
             this.lbl_search_result = new System.Windows.Forms.Label();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.lbl_init_state_info = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.panel_chk.SuspendLayout();
             this.panel_wb.SuspendLayout();
@@ -311,6 +313,10 @@
             this.lbl_init_state_info.TabIndex = 5;
             this.lbl_init_state_info.Text = "label1";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -366,6 +372,8 @@
         private System.Windows.Forms.Label lbl_search_result;
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.Label lbl_init_state_info;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
