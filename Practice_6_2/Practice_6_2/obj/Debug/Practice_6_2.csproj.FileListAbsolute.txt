@@ -1,0 +1,10 @@
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\bin\Debug\Practice_6_2.exe.config
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\bin\Debug\Practice_6_2.exe
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\bin\Debug\Practice_6_2.pdb
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\obj\Debug\Practice_6_2.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\obj\Debug\Practice_6_2.Form1.resources
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\obj\Debug\Practice_6_2.Properties.Resources.resources
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\obj\Debug\Practice_6_2.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\obj\Debug\Practice_6_2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\obj\Debug\Practice_6_2.exe
+\\Mac\Home\Desktop\window_program\HW\Practice_6_2\Practice_6_2\obj\Debug\Practice_6_2.pdb
